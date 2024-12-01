@@ -10,9 +10,14 @@ $(function() {
       // get values from FORM
       var name = $("input#name").val();
       var email = $("input#email").val();
-      var phone = $("input#phone").val();
       var message = $("textarea#message").val();
       var firstName = name; // For Success/Failure Message
+      var payload = {
+          access_key: "6cbff326-a8f1-42a8-9ed4-b6b872383733",
+          name: name,
+          email: email,
+          message: message
+        };
       // Check for white space in name for Success/Fail message
       if (firstName.indexOf(' ') >= 0) {
         firstName = name.split(' ').slice(0, -1).join(' ');
@@ -20,14 +25,13 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: "././mail/contact_me.php",
+        url: "https://api.web3forms.com/submit",
         type: "POST",
-        data: {
-          name: name,
-          phone: phone,
-          email: email,
-          message: message
+        headers: { 
+          "Content-Type": "application/json", 
+          Accept: "application/json",
         },
+        data: JSON.stringify(payload),
         cache: false,
         success: function() {
           // Success message
