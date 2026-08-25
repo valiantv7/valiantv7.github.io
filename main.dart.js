@@ -72885,7 +72885,7 @@ $S:0}
 A.xp.prototype={
 ad(){return new A.OF()}}
 A.OF.prototype={
-I(a){var s=null,r=A.T(a).ax,q=A.be(a,B.ab,t.w).w,p=$.em().$1$0(t.DH).a,o=this.d,n=p[o],m=r.k2,l=A.J3("A focused set of Flutter products I've designed and shipped across mobile, web and desktop.","Portfolio","Selected Work"),k=r.to
+I(a){var s=null,r=A.T(a).ax,q=A.be(a,B.ab,t.w).w,p=$.em().$1$0(t.DH).a,o=this.d,n=p[o],m=r.k2,l=A.J3("A selection of apps I've built - some as solo projects, others alongside larger teams.","Portfolio","Selected Work"),k=r.to
 if(k==null){k=r.A
 if(k==null)k=r.k3}k=A.ma(k)
 q=q.a.a>=1024?A.hv(A.dE(A.c([A.hv(new A.qe(o,new A.aeU(this),s),s,340),A.mu(new A.xn(n,s),1)],t.p),B.ba,B.r,B.x,0),1150,s):A.hv(new A.qe(o,new A.aeV(this,p),s),600,s)
