@@ -1,0 +1,136 @@
+{
+  "hourlyRate": 140.0,
+  "gstRate": 0.1,
+  "appSizes": [
+    {
+      "id": "small",
+      "label": "Small",
+      "description": "Roughly 15 screens",
+      "typicalHours": 120
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "description": "Roughly 30 screens",
+      "typicalHours": 240
+    },
+    {
+      "id": "large",
+      "label": "Large",
+      "description": "Roughly 50+ screens",
+      "typicalHours": 400
+    }
+  ],
+  "aiUsageOptions": [
+    {
+      "id": "low",
+      "label": "Low",
+      "description": "Manual coding with minimal AI. Highest reliability and lowest risk of bugs or hallucinations.",
+      "savingsFactor": 0.0,
+      "savingsPercentage": 0,
+      "warning": null
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "description": "AI prompts & agent-assisted coding. Faster delivery with balanced manual review and moderate bug risk.",
+      "savingsFactor": 0.25,
+      "savingsPercentage": 25,
+      "warning": null
+    },
+    {
+      "id": "high",
+      "label": "High",
+      "description": "Heavy agentic AI generation. Maximum cost savings, but higher risk of hallucinations and subtle bugs.",
+      "savingsFactor": 0.5,
+      "savingsPercentage": 50,
+      "warning": "High AI usage maximizes cost savings, but carries higher risk of hallucinations and subtle bugs that need thorough validation."
+    }
+  ],
+  "features": [
+    {
+      "id": "authentication",
+      "title": "Authentication",
+      "description": "OAuth, social login, session management & passwordless auth",
+      "typicalHours": 25,
+      "icon": "lock_outline_rounded"
+    },
+    {
+      "id": "backendDataStorage",
+      "title": "Backend Data Storage",
+      "description": "Cloud database, secure APIs, offline caching & data sync",
+      "typicalHours": 35,
+      "icon": "storage_rounded"
+    },
+    {
+      "id": "inAppPurchases",
+      "title": "In-App Purchases",
+      "description": "StoreKit & Google Play billing, subscriptions & paywalls",
+      "typicalHours": 30,
+      "icon": "shopping_bag_outlined"
+    },
+    {
+      "id": "socialFeatures",
+      "title": "Social Features",
+      "description": "User profiles, social feeds, sharing, likes & comments",
+      "typicalHours": 30,
+      "icon": "people_outline_rounded"
+    },
+    {
+      "id": "pushNotifications",
+      "title": "Push Notifications",
+      "description": "FCM / APNs integration, targeted & rich notifications",
+      "typicalHours": 20,
+      "icon": "notifications_none_rounded"
+    },
+    {
+      "id": "audioVideoCapture",
+      "title": "Audio / Video Capture",
+      "description": "Camera & mic recording, media processing & storage",
+      "typicalHours": 30,
+      "icon": "videocam_outlined"
+    },
+    {
+      "id": "realtimeMessaging",
+      "title": "Realtime Messaging",
+      "description": "Live chat channels, WebSockets, typing indicators & presence",
+      "typicalHours": 35,
+      "icon": "chat_bubble_outline_rounded"
+    },
+    {
+      "id": "aiFeatures",
+      "title": "AI Features",
+      "description": "Custom assistant UI, semantic search & vision/audio processing",
+      "typicalHours": 35,
+      "icon": "auto_awesome_outlined"
+    },
+    {
+      "id": "adminWebApp",
+      "title": "Admin Web App",
+      "description": "Back-office web portal, content management & metrics dashboard",
+      "typicalHours": 50,
+      "icon": "dashboard_outlined"
+    }
+  ],
+  "copy": {
+    "appSizeTitle": "App Size",
+    "aiUsageTitle": "AI Usage in Development",
+    "featuresTitle": "Common App Features",
+    "estimateBreakdownTag": "ESTIMATE BREAKDOWN",
+    "totalHoursTemplate": "{hours} hrs total",
+    "totalInvestmentLabel": "Total estimated investment (incl. {percent}% GST)",
+    "seniorRateTemplate": "Senior Developer Rate: ${rate}/hr + GST",
+    "appSizeRowLabel": "App Size ({label})",
+    "featuresRowLabel": "Features ({count} selected)",
+    "featuresNoneLabel": "No additional features selected",
+    "aiRowLabel": "AI Dev Assistance ({label})",
+    "aiManualSublabel": "Manual coding • Highest reliability & lowest bug risk",
+    "aiSavingsSublabel": "-{percent}% dev time via AI prompts & agents • Hallucination/bug risk",
+    "subtotalLabel": "Subtotal (excl. GST)",
+    "gstLabel": "GST ({percent}%)",
+    "totalLabel": "Total (incl. GST)",
+    "currencyCode": "AUD",
+    "getInTouchLabel": "Get in touch for a detailed quote",
+    "disclaimer": "* Estimates are indicative based on senior developer velocity ($140/hr + GST) adjusted for AI development efficiency. Higher AI usage reduces manual coding hours but increases risk of hallucinations and edge-case bugs."
+  }
+}
